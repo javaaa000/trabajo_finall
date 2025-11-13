@@ -84,7 +84,7 @@ Sandra - 45 años
 
 **Qué es:** App web de la tienda de articulos relacionados al tejido Revesderecho
 
-**Fuente:** https://hastingsstnoosa.com.au/
+**Fuente:** https://www.revesderecho.com/
 
 | Aspectos Positivos | Aspectos Negativos |
 | ---------------- | ---------------- |
