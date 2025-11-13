@@ -55,7 +55,7 @@ Sandra - 45 años
 
 | Aspectos Positivos | Aspectos Negativos |
 | ---------------- | ---------------- |
-| Secciones bien definidas, ofrece booking, testimonios de clientas, sobre mí, entradas de un blog y sus servicios. Buena identidad gráfica. | Página muy estática, podrían tener más dinamismo los elementos, no posee inisio de sesión |
+| Secciones bien definidas, ofrece booking, testimonios de clientas, sobre mí, entradas de un blog y sus servicios. Buena identidad gráfica. | Página muy estática, podrían tener más dinamismo los elementos, no posee inicio de sesión |
 
 ![DR 1](/img/dr1.png)
 ![DR 1](/img/dr2.png)
@@ -91,4 +91,5 @@ Sandra - 45 años
 | Scroll un poco dinámico, secciones bien definidias, menú superior con secciones desplegables, inicio de sesión, slide conn imágenes llamativas en la página principal, boton de contacto por Whatsapp | No se relaciona al coaching |
 
 ## ¿Qué existe que puede inspirar la propuesta?
-![Coach Web Moodboard](/img/coachwebmoodboard.png)
+
+![Moodboard](/img/coachwebmoodboard.png)
