@@ -91,3 +91,4 @@ Sandra - 45 años
 | Scroll un poco dinámico, secciones bien definidias, menú superior con secciones desplegables, inicio de sesión, slide conn imágenes llamativas en la página principal, boton de contacto por Whatsapp | No se relaciona al coaching |
 
 ## ¿Qué existe que puede inspirar la propuesta?
+![Coach Web Moodboard](/img/coachwebmoodboard.png)
