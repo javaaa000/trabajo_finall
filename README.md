@@ -35,30 +35,41 @@ Sandra - 45 años
 
 ## ¿Qué existe que es similar a la propuesta?
 
+![Mags 1](/img/mags1.png)
+![Mags 2](/img/mags2.png)
+
 **Qué es:** Sitio web de la coach en balance personal Magda
 
 **Fuente:** https://lifecoachmags.com/
 
 | Aspectos Positivos | Aspectos Negativos |
 | ---------------- | ---------------- |
-| Secciones bien definidas, ofrece booking, testimonios de clientas, sobre mí, entradas de un blog y sus servicios | No se siente muy propia su página, demasiado formal |
+| Secciones bien definidas, ofrece booking, testimonios de clientas, sobre mí, entradas de un blog y sus servicios | No se siente muy propia su página, demasiado formal, no posee inicio de sesión |
 
+![Coach 1](/img/coach3.png)
+![Coach 1](/img/coach4.png)
 
-**Qué es:**
+**Qué es:** Sitio web de la coach Lisa Quait
 
 **Fuente:** https://realwoman.coach/
 
 | Aspectos Positivos | Aspectos Negativos |
 | ---------------- | ---------------- |
-| Some content | Other content |
+| Secciones bien definidas, ofrece booking, testimonios de clientas, sobre mí, entradas de un blog y sus servicios. Buena identidad gráfica. | Página muy estática, podrían tener más dinamismo los elementos, no posee inisio de sesión |
 
-**Qué es:**
+![DR 1](/img/dr1.png)
+![DR 1](/img/dr2.png)
+
+**Qué es:** Sitio web del doctor Patric Trevidik experto en Cirujía y Medicia Estética
 
 **Fuente:** https://www.trevidic.com/en/
 
 | Aspectos Positivos | Aspectos Negativos |
 | ---------------- | ---------------- |
-| Some content | Other content |
+| Scroll interesante con gran imagen de fondo, buena identidad gráfica, tiene elementos dinámicos y sitio fácil de navegar. Menú superior interesante | No se relaciona al coaching, no posee inicio de sesión |
+
+![Hastings 1](/img/hastings1.png)
+![Hastings 1](/img/hastings2.png)
 
 **Qué es:**
 
@@ -66,6 +77,17 @@ Sandra - 45 años
 
 | Aspectos Positivos | Aspectos Negativos |
 | ---------------- | ---------------- |
-| Some content | Other content |
+| Scroll con constantes elementos dinámicos, buena identidad gráfica, menú superior desplegable interesante | No se relaciona al coaching, no posee inicio de sesión |
+
+![Reves 1](/img/reves1.png)
+![Reves 1](/img/reves2.png)
+
+**Qué es:** App web de la tienda de articulos relacionados al tejido Revesderecho
+
+**Fuente:** https://hastingsstnoosa.com.au/
+
+| Aspectos Positivos | Aspectos Negativos |
+| ---------------- | ---------------- |
+| Scroll un poco dinámico, secciones bien definidias, menú superior con secciones desplegables, inicio de sesión, slide conn imágenes llamativas en la página principal, boton de contacto por Whatsapp | No se relaciona al coaching |
 
 ## ¿Qué existe que puede inspirar la propuesta?
