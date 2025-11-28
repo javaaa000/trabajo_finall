@@ -3,64 +3,154 @@
   <head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sitio web en construcción</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Mariana García</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
+<body>
+    <nav>
+      <img src="imgcoach/logo.png" alt="Logo" height="50">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre mi</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
 
-<nav class="navbar navbar-expand-lg navbar-custom">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <img src="img/logocoach.webp" alt="Logo Coach" height="50">
-    </a>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="sobremi.html">Sobre mi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="servicios.html">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="productos.html">Productos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="testimonios.html">Testimonios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacto.html">Contacto</a>
-        </li>
-      </ul>
+    <!-- Hero Carousel -->
+<section class="hero-carousel">
+    <!-- Texto fijo encima -->
+    <div class="carousel-text-overlay">
+        <h1>Transforma tu vida</h1>
+        <!--<h2>El cambio comienza aquí</h2>-->
+        <p>Descubre tu mejor versión con acompañamiento personalizado</p>
     </div>
-  </div>
-</nav>
 
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
+    <!-- Imágenes del carousel -->
+
+<section class="carousel-images" id="carousel-images">
+    <div class="slide-image active"><img src="imgcoach/paisaje.webp"></div>
+    <div class="slide-image"><img src="imgcoach/circulo1.webp"></div>
+    <div class="slide-image"><img src="imgcoach/circulo2.webp"></div>
+
+    <button class="img-prev">❮</button>
+    <button class="img-next">❯</button>
+</section>
+
+
+    <!--<div class="carousel-container">
+        <div class="carousel-slide active" style="background-image: url('imgcoach/paisaje.webp');">
+            <div class="image-overlay"></div>
+        </div>
+        <div class="carousel-slide" style="background-image: url('imgcoach/circulo1.webp');">
+            <div class="image-overlay"></div>
+        </div>
+        <div class="carousel-slide" style="background-image: url('imgcoach/ciruclo2.webp');">
+            <div class="image-overlay"></div>
+        </div>
+    </div>-->
+
+</section>
+
+    <!-- Main Content Section -->
+    <section class="section">
+        <h1>Sobre mi trabajo</h1>
+        <br>
+        <p>I've lived this myself, through each decade I've walked through, and so have the women I work with. There comes a point where you know something isn't feeling right… not because you're lost, but because you want something to change and you're not sure what that looks like yet.</p>
+        
+        <p><strong>Let's figure it out together.</strong></p>
+    </section>
+
+    <!-- Why Work With Me Section -->
+    <section class="why-section">
+        <div class="section">
+            <div class="two-columns">
+                <div class="image-placeholder"></div>
+                <div>
+                    <h3>Servicios resumen</h3>
+                    <h2>Your story is telling you it's time.</h2>
+                    <div class="pink-accent"></div>
+                    <p>You've been through changes, and they've made you see yourself differently. You're noticing new thoughts, new feelings and a quiet sense that something in you is ready – you're just not sure what that looks like yet.</p>
+                    <p><strong>That's where I come in.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+
+    <div class="testimonial-slider">
+        <button class="slider-arrow.prev">❮</button>
+<div class="testimonial-content">
+    <div class="testimonial active">
+        <p>"Para mi lo lindo fue la energía que se transmite, confianza y libertad de expresar lo que se siente, haciéndome sentir especial e importante."</p>
+        <span class="author">— JESSICA, 50</span>
     </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+    <div class="testimonial">
+        <p>"Me gusta estar aprendiendo a cuidar mi niña interior, a re-educar la crianza a mis hijos, corrigiendo los estándares con los que a mi me criaron. PriorizarME, valorarME, perder el miedo a decir que NO y soltar."</p>
+        <span class="author">— ALEJANDRA, 45</span>
     </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+    <div class="testimonial">
+        <p>"Siento que en los círculos volví a reflexionar, a pensar en varias cosas que pasan en nuestras vidas. A recortar cosas del pasado, a mirarlas con otra perspectiva. Y muchas veces a escuchar otras vivencias de las pares, te entrega otra experiencia para la tuya."</p>
+        <span class="author">— MARÍA JOSÉ, 52</span>
     </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Siguiente</span>
-  </button>
+</div>
+<button class="slider-arrow.next">❯</button>
 </div>
 
-<h1>inicio</h1>
+    <!-- Story Section -->
+    <section class="section">
+        <div class="two-columns">
+            <div>
+                <h2>your story is calling</h2>
+                <div class="pink-accent"></div>
+                <p>Women usually come to me when things finally click when they know they want more direction, more confidence and someone in their corner to help them move forward. It's that moment where you think, I'm ready for this now. Not a big overhaul. Just a clearer path and support that makes sense.</p>
+                
+                <p>My work is straightforward – real conversations, real stories, real belief.</p>
+                
+                <p>A space to talk honestly about your life, your work and your relationships so we can figure out what you want next.</p>
+                
+                <p>This isn't about quick fixes. It's about joining the dots in your story and seeing the thread that's been there all along. That's how you understand the strength you've built, the skills you already have and what your next step looks like.</p>
+            </div>
+            <div class="image-placeholder"></div>
+        </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>It's Already<br>In Your Story</h2>
+        <p>If you're waiting for the right moment, this is it.<br>Your story starts here.</p>
+        <a href="#contact" class="btn">Book a Call</a>
+    </section>
+
+    <footer>
+    <div class="footer-main">
+        <div class="footer-section">
+            <h2>¡Hablemos!</h2>
+            <a href="mailto:coachmarianagarciah@gmail.com">coachmarianagarciah@gmail.com</a> <a>|</a>
+            <a href="https://wa.me/56994383104">+569 94283104</a>
+        </div>
+        <div class="footer-section">
+            <h2>Podcast <br> Muévete, Cambia y Transforma</h2>
+            <a href="https://www.instagram.com/muevete_cambia_transforma/">Instagram</a> <a>|</a>
+            <a href="https://www.youtube.com/@Mu%C3%A9veteCambiaTransformaPodcast">Youtube</a> <a>|</a>
+            <a href="https://open.spotify.com/show/4obscq0HXoDhBRhNO04GOI?si=735d1873c211407f">Spotify</a>
+        </div>
+        <div class="footer-section">
+            <h2>MSK Consulting</h2>
+            <!---<a href="#" class="disabled">Pronto...</a>--->
+            <p>Pronto...</p>
+        </div>
+    </div>
+    <div class="footer-social">
+        <a href="https://www.instagram.com/coach_marianagarciah">Instagram</a>
+        <a href="https://www.tiktok.com/@coachmarianagarciah">Tiktok</a>
+        <a href="https://www.linkedin.com/in/marianagarciaherrera/">LinkedIn</a>
+    </div>
+    <p class="footer-copyright">&copy; 2025 Coach Mariana García. Todos los derechos reservados. | Desarrollo web por Javiera Valdebenito.</p>
+</footer>
+<script src="testimonios.js" defer></script>
+</body>
 </html>
