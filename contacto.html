@@ -11,42 +11,85 @@
     <nav>
       <img src="imgcoach/logo.png" alt="Logo" height="50">
         <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobremi.html">Sobre mi</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <a href="index.html">Inicio</a>
+            <a href="sobremi.html">Sobre mi</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
         </ul>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>Contacto</h1>
-            <h2>¡Hablemos!</h2>
-            <!--<p>Your story holds the clues.<br>
-            Your strength.<br>
-            Your values.<br>
-            Your belief that's always been there.</p> -->
+            <h1>¡Hablemos!</h1>
+            <h2></h2>
+            <p>Si quieres agendar una sesión, recibir más información sobre mis programas o simplemente compartir tu inquietud, estaré feliz de leerte. <br>
+            Completa el formulario y te responderé a la brevedad.<p>
         </div>
-        <div class="hero-image">
-          
+        <div class="hero-image hero-sobremi">
+            <img src="imgcoach/mariana-garcia.webp" alt="Mariana García">
         </div>
     </section>
 
-    <!-- Main Content Section -->
-    <section class="section">
-        <h2>Everything you need is<br>already in your story</h2>
-        <p>I've lived this myself, through each decade I've walked through, and so have the women I work with. There comes a point where you know something isn't feeling right… not because you're lost, but because you want something to change and you're not sure what that looks like yet.</p>
-        
-        <p>You might be questioning the direction you're heading in. You might feel like you're outgrowing parts of your life. Or you might just want to feel more like you again – whatever decade you're in.</p>
-        
-        <p>More women feel this than you'd ever expect.</p>
-        
-        <p>And this is where the real work begins. This is about the future, taking the thread in your story, the strength, knowledge and skills you already carry, and bringing them into your life today so you can move forward with fresh eyes, real confidence and the strength to handle whatever comes next.</p>
-        
-        <p><strong>Let's figure it out together.</strong></p>
+<section class="contact-section" id="contacto">
+        <div class="contact-header">
+            <h2>Cuéntame en qué puedo ayudarte en tu proceso de transformación</h2>
+            <div class="pink-accent"></div>
+        </div>
+
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombre completo *</label>
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre" 
+                    placeholder="Tu nombre" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="tu@email.com" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input 
+                    type="tel" 
+                    id="telefono" 
+                    name="telefono" 
+                    placeholder="+56 9 1234 5678"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje *</label>
+                <textarea 
+                    id="mensaje" 
+                    name="mensaje" 
+                    placeholder="Cuéntame qué te gustaría trabajar juntos..." 
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar mensaje</button>
+        </form>
+
+        <div class="contact-info">
+            <p>📧 Email: <a href="mailto:coachmarianagarciah@gmail.com">coachmarianagarciah@gmail.com</a></p>
+            <p>📱 WhatsApp: <a href="https://wa.me/56994383104">+56 9 9438 3104</a></p>
+        </div>
     </section>
+
     <footer>
     <div class="footer-main">
         <div class="footer-section">
@@ -73,5 +116,6 @@
     </div>
     <p class="footer-copyright">&copy; 2025 Coach Mariana García. Todos los derechos reservados. | Desarrollo web por Javiera Valdebenito.</p>
 </footer>
+<script src="contacto.js" defer></script>
 </body>
 </html>

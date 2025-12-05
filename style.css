@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&display=swap');
+
 :root {
     --morado-oscuro: #4F005A;
     --morado-principal: #7A2266;
     --morado-claro: #BE8EA6;
-    --crema: #FFF5E3;
+    --crema: #FFFBF4;
     --blanco: #FFFFFF;
     --negro: #222223;
 }
@@ -21,14 +23,14 @@
         }
 
         h1 {
-            font-family: 'Italiana', serif;
+            font-family: 'Italiana', sans-serif;
             -webkit-text-stroke: 0.5px currentColor;
             text-stroke: 0.5px currentColor;
             letter-spacing: 0.5px;
         }
 
         h2 {
-            font-family: 'Italiana', serif;
+            font-family: 'Italiana', sans-serif;
             -webkit-text-stroke: 0.5px currentColor;
             text-stroke: 0.5px currentColor;
             letter-spacing: 0.5px;
@@ -40,7 +42,7 @@
             display: flex;
             position: fixed;
             justify-content: space-between;
-            background: var(--morado-oscuro);
+            background: var(--morado-principal);
             align-items: center;
             border-radius: 40px;
             width: 95%;
@@ -84,7 +86,7 @@
         .hero {
             margin-top: 80px;
             padding: 100px 50px;
-            background: linear-gradient(135deg, #fdf6f9 0%, #fff 100%);
+            background: linear-gradient(135deg, var(--crema) 0%, var(--blanco) 100%);
             min-height: 90vh;
             display: flex;
             align-items: center;
@@ -126,19 +128,44 @@
 
         .hero p {
             font-size: 22px;
-            color: #666;
+            color: var(--negro);
             font-weight: 300;
         }
 
         .hero-image {
-            width: 400px;
-            height: 500px;
-            background: linear-gradient(135deg, #e8a5b8 0%, #f4d5e0 100%);
-            border-radius: 200px 200px 20px 20px;
-            position: relative;
-            z-index: 2;
-            box-shadow: 0 20px 60px rgba(232, 165, 184, 0.3);
-        }
+    width: 400px;
+    height: 550px;
+    background: linear-gradient(135deg, var(--morado-claro) 0%, var(--morado-principal) 100%);
+    border-radius: 200px 200px 20px 20px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 20px 60px rgba(122, 34, 102, 0.3);
+    overflow: visible; /* IMPORTANTE: oculta lo que se sale del borde redondeado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-sobremi img {
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    position: absolute;
+    top: -10%; /* Se desborda arriba */
+    left: 0;
+    border-radius: 200px 200px 20px 20px;
+    clip-path: inset(0 0 0 0 round 200px 200px 20px 20px); /* ✅ Mantiene los bordes redondeados */
+}
+
+.hero-normal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    border-radius: 200px 200px 20px 20px;
+    clip-path: inset(0 0 0 0 round 200px 200px 20px 20px); /* ✅ Mantiene los bordes redondeados */
+}
 
         /* Section */
         .section {
@@ -151,12 +178,12 @@
             font-size: 40px;
             font-weight: 300;
             margin-bottom: 40px;
-            color: #2c2c2c;
+            color: var(--morado-oscuro);
         }
 
         .section p {
             font-size: 20px;
-            color: #666;
+            color: var(--negro);
             line-height: 1.8;
             margin-bottom: 20px;
         }
@@ -173,22 +200,24 @@
         .image-placeholder {
             width: 100%;
             height: 600px;
-            background: linear-gradient(135deg, #f4d5e0 0%, #e8a5b8 100%);
+            background: linear-gradient(135deg, var(--morado-claro) 0%, var(--morado-principal) 100%);
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(232, 165, 184, 0.2);
+            object-fit: cover;
         }
 
         /* Decorative Elements */
         .pink-accent {
             width: 60px;
             height: 60px;
-            background: #e8a5b8;
+            background: var(--morado-claro);
             border-radius: 50%;
             margin: 30px 0;
+            transition: transform 0.3s ease-out;
         }
 
         .quote-section {
-            background: #fdf6f9;
+            background: var(--crema);
             padding: 80px 50px;
             margin: 80px 0;
             border-radius: 20px;
@@ -198,7 +227,7 @@
         .quote-section p {
             font-size: 24px;
             font-style: italic;
-            color: #2c2c2c;
+            color: var(--morado-oscuro);
             max-width: 800px;
             margin: 0 auto 30px;
             line-height: 1.8;
@@ -207,7 +236,7 @@
         .quote-author {
             text-align: right;
             font-size: 18px;
-            color: #e8a5b8;
+            color: var(--morado-principal);
             font-weight: 600;
             max-width: 800px;
             margin: 0 auto;
@@ -215,7 +244,7 @@
 
         /* CTA Section */
         .cta-section {
-            background: linear-gradient(135deg, #e8a5b8 0%, #f4d5e0 100%);
+            background: linear-gradient(135deg, var(--morado-principal) 0%, var(--morado-claro) 100%);
             padding: 100px 50px;
             text-align: center;
             color: white;
@@ -225,20 +254,20 @@
             font-size: 72px;
             font-weight: 300;
             margin-bottom: 20px;
-            color: white;
+            color: var(--blanco);
         }
 
         .cta-section p {
             font-size: 24px;
             margin-bottom: 40px;
-            color: white;
+            color: var(--blanco);
         }
 
         .btn {
             display: inline-block;
             padding: 18px 50px;
-            background: white;
-            color: #e8a5b8;
+            background: var(--blanco);
+            color: var(--morado-principal);
             text-decoration: none;
             border-radius: 50px;
             font-size: 18px;
@@ -254,7 +283,7 @@
 
         /* Why Section */
         .why-section {
-            background: #fdf6f9;
+            background: var(--crema);
             padding: 100px 50px;
         }
 
@@ -262,7 +291,7 @@
             font-size: 20px;
             letter-spacing: 3px;
             text-transform: uppercase;
-            color: #e8a5b8;
+            color: var(--morado-principal);
             margin-bottom: 20px;
         }
 
@@ -282,7 +311,7 @@
         }
 
         .footer-section h2 {
-            font-family: 'Italiana', serif;
+            font-family: 'Italiana', sans-serif;
             font-size: 22px;
             margin-bottom: 15px;
             color: var(--crema);
@@ -298,7 +327,7 @@
         }
 
         .footer-section a:hover {
-            color: #e8a5b8;
+            color: var(--blanco);
         }
 
         .footer-social {
@@ -309,7 +338,7 @@
         }
 
         .footer-social a {
-            color: #e8a5b8;
+            color: var(--morado-principal);
             text-decoration: none;
             font-size: 16px;
             letter-spacing: 1px;
@@ -317,18 +346,20 @@
         }
 
         .footer-social a:hover {
-            color: white;
+            color: var(--blanco);
             transform: translateY(-3px);
         }
 
         .footer-copyright {
             text-align: center;
             font-size: 14px;
-            color: #666;
+            color: var(--morado-claro);
+            opacity: 0.7;
         }
 
         .footer-section p{
-            color: #999;
+            color: var(--morado-claro);
+            opacity: 0.8;
         }
 
         @media (max-width: 768px) {
@@ -375,7 +406,7 @@
 }
 
 .service-card {
-    background: white;
+    background: var(--blanco);
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -439,7 +470,7 @@
     margin: 0 auto 30px;
     padding: 12px 40px;
     background: var(--morado-principal);
-    color: white;
+    color: var(--blanco);
     border: none;
     border-radius: 30px;
     font-size: 16px;
@@ -474,7 +505,7 @@
 .service-description p {
     font-size: 18px;
     line-height: 1.8;
-    color: #666;
+    color: var(--negro);
     margin-bottom: 20px;
 }
 
@@ -488,7 +519,7 @@
     padding: 10px 0;
     padding-left: 30px;
     position: relative;
-    color: #666;
+    color: var(--negro);
     font-size: 16px;
 }
 
@@ -542,7 +573,7 @@
     right: 20px;
     width: 40px;
     height: 40px;
-    background: white;
+    background: var(--blanco);
     border: none;
     border-radius: 50%;
     font-size: 24px;
@@ -561,7 +592,7 @@
 
 .close-card:hover {
     background: var(--morado-principal);
-    color: white;
+    color: var(--blanco);
     transform: rotate(90deg);
 }
 
@@ -595,7 +626,7 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    margin-top: 80px; /* Ajustar según altura del nav */
+    margin-top: 0px; /* Ajustar según altura del nav */
 }
 
 /* Container de slides */
@@ -641,10 +672,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
+    color: var(--blanco);
     z-index: 10;
     width: 90%;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 .carousel-text-overlay h1 {
@@ -674,7 +705,7 @@
     transform: translateY(-50%);
     background: rgba(255, 255, 255, 0.3);
     border: none;
-    color: white;
+    color: var(--blanco);
     font-size: 40px;
     width: 60px;
     height: 60px;
@@ -719,7 +750,7 @@
 }
 
 .indicator.active {
-    background: white;
+    background: var(--blanco);
     transform: scale(1.3);
 }
 
@@ -765,6 +796,10 @@
 /* NUEVO CAROUSEL DE IMÁGENES (SECUNDARIO)       */
 /* --------------------------------------------- */
 
+/* --------------------------------------------- */
+/* CAROUSEL DE IMÁGENES                         */
+/* --------------------------------------------- */
+
 .carousel-images {
     position: relative;
     width: 100%;
@@ -794,7 +829,7 @@
     z-index: 1;
 }
 
-/* Flechas específicas de este carousel */
+/* Flechas específicas del carousel de imágenes */
 .img-prev,
 .img-next {
     position: absolute;
@@ -802,7 +837,7 @@
     transform: translateY(-50%);
     background: rgba(255,255,255,0.3);
     border: none;
-    color: white;
+    color: var(--blanco);
     font-size: 40px;
     width: 60px;
     height: 60px;
@@ -822,109 +857,37 @@
 .img-prev { left: 30px; }
 .img-next { right: 30px; }
 
-
-/* --------------------------------------------- */
-/* TESTIMONIAL SLIDER                           */
-/* --------------------------------------------- */
-
-.testimonial-slider {
-    max-width: 900px;
-    margin: 80px auto;
-    padding: 80px 100px;
-    background: var(--rosa-fondo);
-    border-radius: 20px;
-    position: relative;
-}
-
-.testimonial-content {
-    position: relative;
-    min-height: 250px;
-}
-
-.testimonial {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: opacity 0.8s ease-in-out;
-    text-align: center;
-}
-
-.testimonial.active {
-    opacity: 1;
-}
-
-.testimonial p {
-    font-size: 26px;
-    font-style: italic;
-    color: var(--negro);
-    line-height: 1.8;
-    margin-bottom: 30px;
-}
-
-.testimonial .author {
-    display: block;
-    text-align: center;
-    font-size: 18px;
-    color: var(--rosa-principal);
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-.slider-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: white;
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 24px;
-    color: var(--rosa-principal);
-    cursor: pointer;
-    transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    z-index: 10;
-}
-
-.slider-arrow:hover {
-    background: var(--rosa-principal);
-    color: white;
-    transform: translateY(-50%) scale(1.1);
-}
-
-.slider-arrow.prev { left: 20px; }
-.slider-arrow.next { right: 20px; }
-
 @media (max-width: 768px) {
-    .testimonial-slider {
-        padding: 60px 60px;
+    .carousel-images {
+        height: 50vh;
+        margin: 40px auto;
     }
 
-    .slider-arrow {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
+    .img-prev,
+    .img-next {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
     }
 
-    .slider-arrow.prev { left: 10px; }
-    .slider-arrow.next { right: 10px; }
-
-    .testimonial p {
-        font-size: 20px;
-    }
+    .img-prev { left: 15px; }
+    .img-next { right: 15px; }
 }
 
+
+/* --------------------------------------------- */
+/* CAROUSEL DE TESTIMONIOS                      */
+/* --------------------------------------------- */
+
 .testimonial-slider {
-    max-width: 900px;
+    max-width: 1100px;
+    width: 90%;
     margin: 80px auto;
-    padding: 80px 100px;
-    background: var(--rosa-fondo);
+    padding: 60px 80px;
     border-radius: 20px;
     position: relative;
-    overflow: hidden; /* IMPORTANTE para el efecto slide */
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .testimonial-content {
@@ -934,9 +897,9 @@
 }
 
 .testimonial {
-    min-width: 100%;
+    max-width: 100%;
     flex-shrink: 0;
-    padding: 20px;
+    padding: 100px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -947,17 +910,19 @@
     color: var(--negro);
     line-height: 1.8;
     margin-bottom: 30px;
+    word-wrap: break-word;
 }
 
 .testimonial .author {
     display: block;
     text-align: center;
     font-size: 18px;
-    color: var(--rosa-principal);
+    color: var(--morado-principal);
     font-weight: 600;
     letter-spacing: 1px;
 }
 
+/* Flechas específicas del carousel de testimonios */
 .slider-arrow {
     position: absolute;
     top: 50%;
@@ -968,7 +933,7 @@
     height: 50px;
     border-radius: 50%;
     font-size: 24px;
-    color: var(--rosa-principal);
+    color: var(--morado-principal);
     cursor: pointer;
     transition: all 0.3s;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -976,18 +941,18 @@
 }
 
 .slider-arrow:hover {
-    background: var(--rosa-principal);
+    background: var(--morado-principal);
     color: white;
     transform: translateY(-50%) scale(1.1);
 }
 
-.slider-arrow.prev { left: 20px; }
-.slider-arrow.next { right: 20px; }
-
+.slider-arrow.prev { left: 15px; }
+.slider-arrow.next { right: 15px; }
 
 @media (max-width: 768px) {
     .testimonial-slider {
-        padding: 60px 60px;
+        padding: 60px 30px;
+        width: 95%;
     }
     
     .slider-arrow {
@@ -1003,3 +968,282 @@
         font-size: 20px;
     }
 }
+
+/* --------------------------------------------- */
+/* CAROUSEL DE VALORES/TARJETAS                 */
+/* --------------------------------------------- */
+
+.values-carousel-section {
+    overflow: hidden;
+    margin-top: -200px;
+    margin-bottom: 100px;
+}
+
+.values-title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--morado-oscuro);
+    padding: 0 50px;
+}
+
+.values-carousel {
+    position: relative;
+    width: 100%;
+    overflow: visible; /* Cambiado para que se desborden */
+    padding: 40px 0;
+}
+
+.values-track {
+    display: flex;
+    gap: 30px; /* Separación entre tarjetas */
+    transition: transform 0.5s ease-in-out;
+    padding: 0 50px; /* Padding lateral */
+}
+
+.value-card {
+    min-width: calc(30% - 30px); /* 80% del ancho de la ventana menos el gap */
+    max-width: 700px;
+    padding: 60px 50px;
+    border-radius: 20px;
+    color: var(--blanco);
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    flex-shrink: 0;
+}
+
+.value-icon {
+    font-size: 72px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+
+.value-card h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--blanco);
+}
+
+.value-card p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.95);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Flechas */
+.values-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--blanco);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: var(--morado-principal);
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.values-arrow:hover {
+    background: var(--morado-principal);
+    color: var(--blanco);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.values-prev { left: 20px; }
+.values-next { right: 20px; }
+
+/* Indicadores */
+.values-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.values-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(122, 34, 102, 0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.values-dot.active {
+    background: var(--morado-principal);
+    transform: scale(1.3);
+}
+
+@media (max-width: 768px) {
+    .values-carousel-section {
+        padding: 60px 0;
+    }
+
+    .values-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+
+    .values-track {
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .value-card {
+        min-width: calc(90% - 20px);
+        padding: 40px 30px;
+    }
+
+    .value-icon {
+        font-size: 56px;
+    }
+
+    .value-card h3 {
+        font-size: 28px;
+    }
+
+    .value-card p {
+        font-size: 18px;
+    }
+
+    .values-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .values-prev { left: 10px; }
+    .values-next { right: 10px; }
+}
+
+.contact-section {
+            max-width: 80%;
+            margin: 0 auto;
+            margin-bottom: 100px;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(122, 34, 102, 0.15);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-header h2 {
+            color: var(--morado-principal);
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-header p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            color: var(--morado-oscuro);
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e9d5ff;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+            background: #faf5ff;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--morado-claro);
+            background: white;
+            box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #aaa;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, var(--morado-claro) 0%, var(--morado-principal) 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(122, 34, 102, 0.3);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(122, 34, 102, 0.4);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #e9d5ff;
+            text-align: center;
+        }
+
+        .contact-info p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: var(--morado-principal);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--morado-claro);
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                padding: 30px 20px;
+            }
+
+            .contact-header h2 {
+                font-size: 1.5rem;
+            }
+        }
